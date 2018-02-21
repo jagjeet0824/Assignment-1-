@@ -1,0 +1,51 @@
+﻿@model Assingnment_1_.Models.Table1
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Table1</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Table11.Cars)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Table11.Cars)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cars)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cars)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bikes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bikes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trucks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trucks)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cost }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
